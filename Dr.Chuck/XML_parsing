@@ -1,0 +1,15 @@
+import urllib
+import xml.etree.ElementTree as ET
+
+url = raw_input('Enter location: ')
+print()'Retriving  %s', url)
+data = urllib.urlopen(url).read()
+xml = ET.fromstring(data)
+
+counts = xml.findall('.//count')
+
+sum = 0
+for count in counts:
+    sum = sum + int(count.text)
+
+print ('Sum: %s', sum)
