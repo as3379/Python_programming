@@ -1,3 +1,4 @@
+"""Determine if a string is a palindrome/ Reverse a string  """
 n = input ('Enter the series in space seperated form: ')
 n1 = n.split(" ")
 a = list(n1)
