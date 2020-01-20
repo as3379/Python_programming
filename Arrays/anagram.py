@@ -1,4 +1,8 @@
 
+"""how to tell if two strings are anagram"""
+
+
+#Method1 - Using empty dict
 
 def anagram(a, b):
 
@@ -33,3 +37,21 @@ def anagram(a, b):
 a = 'Beeer'
 b = 'Beer'
 print(anagram(a, b))
+
+
+
+#Method2 - Using sort()
+
+A = "listen"
+a = A.lower()
+a=list(a)
+B = "silent"
+b = B.lower()
+b=b.lower()
+b=list(b)
+a = a.sort()
+b = b.sort()
+if a == b:
+    print('Strings are anagram')
+else:
+    print('Strings are not anagram')

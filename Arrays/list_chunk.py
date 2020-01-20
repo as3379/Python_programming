@@ -5,8 +5,7 @@ def divide_chunks(my_list, l, n):
         yield my_list[i:i + n]
     return my_list
 
-# How many elements each
-# list should have
+
 
 my_list = [1, 2, 3, 4, 5,
               6, 7, 8, 9]
@@ -15,6 +14,10 @@ l = len(my_list)
 n = 4
 x = list(divide_chunks(my_list, l, n ))
 print (x)
+
+
+# Method2:
+
 if l%n ==0:
     n1 = l//n
 else:

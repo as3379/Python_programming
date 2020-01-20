@@ -1,5 +1,5 @@
-# Subtract 1 from each element
-
+"""Given an array with numbers 1-5, how would you subtract
+one number from each index?"""
 def subtract (a):
 
     n = len(a)
@@ -10,7 +10,8 @@ def subtract (a):
 
 subtract(a=[1,2,3,4,5])
 
-#Subtract 1 from each even elements
+"""Given an array with numbers 1-5, how would you
+subtract one number from every EVEN number in each index?"""
 
 def subtract_even (a):
 

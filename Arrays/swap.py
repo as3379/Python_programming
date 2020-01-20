@@ -7,7 +7,10 @@ temp = b[0]
 b[0] = b[n-1]
 b[n-1] = temp
 
+print (b)
+
 #to swap two given positions
+temp = b[0]
 b[0] = b[2]
 b[2]= temp
 print (b)

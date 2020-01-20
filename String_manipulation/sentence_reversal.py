@@ -18,5 +18,7 @@ for i in range (0, n):
     temp = b[i]
     b [i] = b[l-1]
     b[l-1] = temp
-    l -= l
+    l = l-1
 print (b)
+
+print(" ".join(b))

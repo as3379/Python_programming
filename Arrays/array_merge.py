@@ -3,7 +3,7 @@
 test_list1 = [1, 4, 6,6, 7, 9, 10]
 test_list2 = [1, 2, 3, 5, 5, 6,6, 9,10]
 
-def reverse_sentence (test_list1, test_list2):
+def merge(test_list1, test_list2):
 
 # using naive method
 # to combine two sorted lists
@@ -30,24 +30,12 @@ def reverse_sentence (test_list1, test_list2):
     return str(res)
 
 
-print ("The combined sorted list is : " + reverse_sentence (test_list1, test_list2))
+print ("The combined sorted list is : " + merge (test_list1, test_list2))
 
 
 #Method2 - Using sorted()
 
 a = test_list1 + test_list2
 print(a)
-
-n = len(a)
-
-for i in range (0, n-1):
-
-    if a[i] > a[i+1]:
-        temp = a[i]
-        a[i] = a[i+1]
-        a[i+1] = temp
-    else:
-        continue
+a = sorted(a)
 print(a)
-# c = sorted(c)
-# print(c)
