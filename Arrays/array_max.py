@@ -1,7 +1,7 @@
 # a = input('Enter the series of comma seperated number:  ')
 # b = a.split(" ")
 
-"""Find the highest element of the given Array"""
+"""Find the highest element of a given Array"""
 b = [5,6,2,39,10, 510]
 l = len(b)
 max = b[0]
