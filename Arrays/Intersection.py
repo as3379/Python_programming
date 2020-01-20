@@ -8,7 +8,7 @@ expectedReturn={"a","a","d"}"""
 # Method1:
 
 def intersection(List1, List2):
-    List_Intersection = set(List1) & set(List2)
+    List_Intersection = list(set(List1) & set(List2))
     return List_Intersection
 List1 = ["a","a","a", "b", "d"]
 List2 = ["a", "a", "c", "d"]
