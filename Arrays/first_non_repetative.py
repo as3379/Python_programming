@@ -1,3 +1,4 @@
+"""how to find the first non-repetitive characters in the String"""
 a= 'AAsshrritHa'
 
 a_dict={}
