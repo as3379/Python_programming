@@ -17,3 +17,20 @@ print (Repeat(list1))
 #method2
 newlist = [t for t in set(list1) if list1.count(t) > 1]
 print(newlist)
+
+
+# Method3:
+
+d = {}
+duplicates = []
+for i in list1:
+    if i not in d:
+        d[i] =1
+    else:
+        d[i] +=1
+
+for k in d:
+    if d[k] > 1:
+        duplicates.append(k)
+
+print(duplicates)

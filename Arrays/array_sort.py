@@ -1,3 +1,5 @@
+# Not working
+
 def sort(a):
 
     n = len(a)
@@ -13,4 +15,4 @@ def sort(a):
     print(a)
 
 
-sort(a=[3,1,3,4,5])
+sort(a=[3,1,3,4,5,2])

@@ -1,4 +1,5 @@
-"""Write a function that takes two lists of strings and return a list of Strings with all of the intersections of the strings ex:
+"""Write a function that takes two lists of strings and return a
+list of Strings with all of the intersections of the strings ex:
 
 List1 = {"a","a","a", "b", "d"}
 List2 = {"a", "a", "c", "d"}
@@ -7,7 +8,7 @@ expectedReturn={"a","a","d"}"""
 # Method1:
 
 def intersection(List1, List2):
-    List_Intersection = list(set(List1) & set(List2))
+    List_Intersection = set(List1) & set(List2)
     return List_Intersection
 List1 = ["a","a","a", "b", "d"]
 List2 = ["a", "a", "c", "d"]

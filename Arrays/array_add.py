@@ -1,3 +1,7 @@
+"""Given an integer whose unique digits are values in an array
+(123 would be [1, 2, 3]), write an algorithm that adds
+one to the integer and returns the updated array.  """
+
 def add_one(arr):
 
     "".join(arr)

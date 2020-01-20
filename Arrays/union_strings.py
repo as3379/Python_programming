@@ -1,13 +1,16 @@
 """
 Find the union of two strings?
 """
+
+#Method 1 - Using set()
 a = 'once up on time'
 b = 'time is money'
+
 
 A = a.split(" ")
 B = b.split( " ")
 C = A + B
-C = set(C)
+C = OrderedSet(C)
 print (C)
 D = ' '.join(C)
 print (D)
@@ -35,7 +38,7 @@ def union1(a, b):
 
     print(A+B)
 
-#Method 2 - using set()
+#Method 3 - using set() for individual ones
 
 def union2(a,b):
 

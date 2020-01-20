@@ -1,16 +1,12 @@
 a = "AAAAaabbbccccaaa"
+new_string = ""
 
-start, end = 0, 1
-new_string = a[0]
 count = 1
-while end < len(a):
-  if a[start] == a[end]:
+for i in range(len(a)-1):
+  if a[i] == a[i+1]:
     count += 1
-    end += 1
   else:
-    new_string += str(count)
-    start, end = end, end+1
-    new_string += a[start]
+    new_string += a[i]+ str(count)
     count = 1
-new_string += str(count)
+new_string += a[i]+ str(count)
 print (new_string)

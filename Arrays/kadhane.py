@@ -5,7 +5,7 @@ from sys import maxsize
 # and print its starting and end index
 def maxSubArraySum(a,size):
 
-    max_so_far = -maxsize - 1
+    max_so_far = 0
     max_ending_here = 0
     start = 0
     end = 0
@@ -15,14 +15,16 @@ def maxSubArraySum(a,size):
 
         max_ending_here += a[i]
 
-        if max_so_far < max_ending_here:
+        if max_ending_here < 0:
+            max_ending_here = 0
+            s = i+1
+
+        elif max_so_far < max_ending_here:
             max_so_far = max_ending_here
             start = s
             end = i
 
-        if max_ending_here < 0: 
-            max_ending_here = 0
-            s = i+1
+
 
     print ("Maximum contiguous sum is %d"%(max_so_far))
     print ("Starting Index %d"%(start))

@@ -1,13 +1,6 @@
-n = input('Enter series of numbers seperated by sapce: ')
-a = n.split(" ")
-l = len(a)
-flag = 0
-for i in range (0, l-1):
-    if a[i] <= a[i+1]:
-        flag = 1
-print(flag)
+"""An array is monotonic if and only if it is monotone increasing,
+or monotone decreasing"""
+def isMonotonic(A):
 
-if flag ==0:
-    print("Array is not monotonic")
-else:
-    print("Array is monotonic")
+    return (all(A[i] <= A[i + 1] for i in range(len(A) - 1)) or
+            all(A[i] >= A[i + 1] for i in range(len(A) - 1)))

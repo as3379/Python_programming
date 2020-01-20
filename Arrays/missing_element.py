@@ -1,4 +1,4 @@
-
+"""find the missing element from two arrays """
 
 def finder1(arr1, arr2):
 
@@ -9,13 +9,13 @@ def finder1(arr1, arr2):
             count[i] += 1
         else:
             count[i] = 1
-    print(count)
+    # print(count)
     for j in arr2:
         if j in count:
             count[j] -= 1
         else:
             count[j] =1
-    print(count)
+    # print(count)
 
     for k in count:
         if count[k] > 0:
@@ -26,8 +26,8 @@ def finder1(arr1, arr2):
 arr1 = [4,4,4, 5, 5]
 arr2 = [4, 4, 5,5 ]
 
-#1, 0, 4
-#finder1(arr1, arr2)
+# 1, 0, 4
+finder1(arr1, arr2)
 
 
 #Find the missing element in an array of range
@@ -38,7 +38,7 @@ Design algorithm finding the missing number."""
 def finder2 (arr):
     n = len(arr)
 
-    for i in range (n+1):
+    for i in range (1,n+1):
         if i in arr:
             continue
         else:

@@ -9,6 +9,7 @@ def anagram(a, b):
     #Edge case:
     if len(a) != len(b):
         return False
+
     for i in a:
         if i in count:
             count[i] += 1
@@ -29,6 +30,6 @@ def anagram(a, b):
 
     return True
 
-a = 'Dormitory'
-b = 'Dirty room'
+a = 'Beeer'
+b = 'Beer'
 print(anagram(a, b))
