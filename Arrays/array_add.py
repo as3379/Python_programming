@@ -4,8 +4,7 @@ one to the integer and returns the updated array.  """
 
 def add_one(arr):
 
-    "".join(arr)
-    print(arr)
+
 
     n = len(arr)
     number = 0
@@ -15,7 +14,6 @@ def add_one(arr):
     print(number)
 
     number = number + 1
-    number = str(number)
     new_arr = list(map(int, str(number)))
 
 
