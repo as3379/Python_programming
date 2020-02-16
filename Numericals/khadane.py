@@ -1,15 +1,15 @@
-"""Find the largest sum of consecutive integers in an array
- - Kadane's Algorithm
-"""
+#Largest continous sum
+from sys import maxsize
 
-
+# Function to find the maximum contiguous subarray
+# and print its starting and end index
 def maxSubArraySum(a,size):
 
     max_so_far = 0
     max_ending_here = 0
     start = 0
     end = 0
-
+    s = 0
 
     for i in range(0,size):
 
@@ -17,10 +17,11 @@ def maxSubArraySum(a,size):
 
         if max_ending_here < 0:
             max_ending_here = 0
-            start = i+1
+            s = i+1
 
-        if max_so_far < max_ending_here:
+        elif max_so_far < max_ending_here:
             max_so_far = max_ending_here
+            start = s
             end = i
 
 

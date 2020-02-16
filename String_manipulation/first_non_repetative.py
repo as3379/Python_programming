@@ -1,3 +1,4 @@
+"""how to find the first non-repetitive characters in the String"""
 a= 'AAsshrritHa'
 a = a.lower() # if capital is not considered.
 a_dict={}

@@ -12,6 +12,7 @@ def int_to_string(integer):
 
     output = []
     while integer > 0:
+
         output.append(chr(ord('0')+ integer % 10))
         integer //= 10
 
@@ -21,7 +22,7 @@ def int_to_string(integer):
         z = '-' + z
 
 
-    print(z)
+    print(z, type(z))
 
 integer = -1023
 int_to_string(integer)
