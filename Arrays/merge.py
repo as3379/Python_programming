@@ -22,7 +22,7 @@ def reverse_sentence (test_list1, test_list2):
           res.append(test_list2[j])
           j += 1
 
-    print(i, j)
+
 
     res = res + test_list1[i:] + test_list2[j:]
 
@@ -36,18 +36,7 @@ print ("The combined sorted list is : " + reverse_sentence (test_list1, test_lis
 #Method2 - Using sorted()
 
 a = test_list1 + test_list2
-print(a)
 
 n = len(a)
-
-for i in range (0, n-1):
-
-    if a[i] > a[i+1]:
-        temp = a[i]
-        a[i] = a[i+1]
-        a[i+1] = temp
-    else:
-        continue
-print(a)
-# c = sorted(c)
-# print(c)
+c = sorted(a)
+print(c)

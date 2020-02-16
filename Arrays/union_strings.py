@@ -1,24 +1,31 @@
 """
 Find the union of two strings?
 """
-
+import collections
 #Method 1 - Using set()
+
+
 a = 'once up on time'
 b = 'time is money'
 
-
-A = a.split(" ")
-B = b.split( " ")
-C = A + B
-C = OrderedSet(C)
-print (C)
-D = ' '.join(C)
-print (D)
+#
+# A = a.split(" ")
+# B = b.split( " ")
+# C = A + B
+# C = OrderedSet(C)
+#
+# D = ' '.join(C)
+# print (D)
 
 
 #Method 1
 
-def union1(a, b):
+def union1():
+    a = 'once up on time'
+    b = 'time is money'
+
+    a = a.split(" ")
+    b = b.split(" ")
     A = []
     B = []
 
@@ -36,7 +43,10 @@ def union1(a, b):
         if i in B:
             B.remove(i)
 
-    print(A+B)
+    C = A + B
+
+    D = ' '.join(C)
+    print(D)
 
 #Method 3 - using set() for individual ones
 
@@ -52,5 +62,6 @@ def union2(a,b):
 
 
 
-union1(a='ashi', b='gowda')
+union1()
 union2(a='ashi', b='gowda')
+

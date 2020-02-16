@@ -15,11 +15,12 @@ class Stack(object):
 
 s = Stack()
 # print(s.isEmpty())
-print(s.push(1))
+s.push(1)
 # print(s.isEmpty())
-# print(s.pop())
+
 # print(s.isEmpty())
 s.push(2)
 s.push(3)
-# print(s.peek())
-print(s.size())
+print(s.pop())
+print(s.peek())
+print(s.items)

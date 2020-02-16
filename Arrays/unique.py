@@ -24,7 +24,7 @@ s = 'Ashritha'
 print(finder(s))
 
 
-# Method2 - Create a set od string ang compare the lenght of set with original new_string
+# Method2 - Create a set of string ang compare the length of set with original new_string
 def finder2(s):
 
     return (len(set(s))==len(s))

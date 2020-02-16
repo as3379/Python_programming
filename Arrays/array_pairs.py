@@ -1,3 +1,5 @@
+"Find Array pairs for given Sum."
+
 def printPairs(arr, arr_size, sum):
 
     # Create an empty hash set
@@ -9,10 +11,11 @@ def printPairs(arr, arr_size, sum):
         if (temp in s):
 
             x = list((str(arr[i]),str(temp)))
-            print(x)
             l.append(x)
-        print(l)
         s.add(arr[i])
+
+
+    print(l)
 
 # driver program to check the above function
 A = [1, 4, 45, 6, 10, 8, 8, 12]

@@ -1,5 +1,5 @@
 a= 'AAsshrritHa'
-
+a = a.lower() # if capital is not considered.
 a_dict={}
 for i in a:
     if i not in a_dict:

@@ -1,6 +1,5 @@
-# a = input('Enter the series of comma seperated number:  ')
-# b = a.split(" ")
-b = [5,6,2,39,10, 510]
+"Find the maximum element in a given array"
+b = [575,6,2,39,10, 510]
 l = len(b)
 max = b[0]
 for i in range (0, l):

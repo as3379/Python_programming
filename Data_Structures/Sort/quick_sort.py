@@ -6,17 +6,19 @@ def quick_sort(sequence):
     if length <= 1:
         return sequence
     else:
-        pivot = sequence.pop()
+        pivot = sequence.pop(0)
 
     items_greater = []
     items_lower = []
 
     for item in sequence:
-        if item > pivot:
+        if item < pivot:
             items_greater.append(item)
 
         else:
             items_lower.append(item)
+
+
 
     return quick_sort(items_lower) + [pivot] + quick_sort(items_greater)
 

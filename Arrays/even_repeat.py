@@ -2,7 +2,7 @@
 """
 Find from a list of numbers where each
 number is repeating even number of times except one.
- Find that number ?
+Find that number ?
 """
 
 #Method 1

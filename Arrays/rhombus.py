@@ -30,14 +30,17 @@ def diamond(n):
 
 diamond(5)
 
+
 # Method3:
  #    1
  #   212
  #  32123
  # 4321234
+#   32123
+#    212
 
 def rhombus(n):
-    for i in range (1, n):
+    for i in range (1, n+1):
         for j in range (1, n-i+1): # for spaces
             print(end = " ")
         for j in range (i,0,-1): #for spaces
@@ -45,10 +48,18 @@ def rhombus(n):
         for j in range (2,i+1): #for spaces
             print(j,end = "")
         print()
+    for i in range(1, n):
+        for j in range(1, i + 1):  # for spaces
+            print(end=" ")
+        for j in range(n-i, 0, -1):  # for second triangle
+            print(j, end="")
+        for j in range(2,n-i+1):  # for third triangle
+            print(j, end="")
+        print()
 rhombus(5)
 
 # Method4:
- #    1
+ #     1
  #    121
  #   12321
  #  1234321

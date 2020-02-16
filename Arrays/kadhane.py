@@ -1,8 +1,7 @@
-#Largest continous sum
-from sys import maxsize
+"""Largest continous sum from
+Function to find the maximum contiguous subarray
+and print its starting and end index"""
 
-# Function to find the maximum contiguous subarray
-# and print its starting and end index
 def maxSubArraySum(a,size):
 
     max_so_far = 0

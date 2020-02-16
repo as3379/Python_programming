@@ -1,3 +1,25 @@
+# Driver Code
+list1 = [10, 20, 30, 20, 20, 30, 40,
+         50, -20, 60, 60, -20, -20]
+
+#Method1:
+
+d = {}
+duplicates = []
+for i in list1:
+    if i not in d:
+        d[i] = 1
+    else:
+        d[i] += 1
+
+for k in d:
+    if d[k] > 1:
+        duplicates.append(k)
+
+print("Finding repeats using dictionary: ", duplicates)
+
+
+# Method2
 def Repeat(x):
     _size = len(x)
     repeated = []
@@ -8,29 +30,14 @@ def Repeat(x):
                 repeated.append(x[i])
     return repeated
 
-# Driver Code
-list1 = [10, 20, 30, 20, 20, 30, 40,
-         50, -20, 60, 60, -20, -20]
+
 l = len(list1)
-print (Repeat(list1))
+print("Finding repeats using Iterator: " , Repeat(list1))
 
-#method2
+#Method3
 newlist = [t for t in set(list1) if list1.count(t) > 1]
-print(newlist)
+print("Finding repeats using compression: ", newlist)
 
 
-# Method3:
 
-d = {}
-duplicates = []
-for i in list1:
-    if i not in d:
-        d[i] =1
-    else:
-        d[i] +=1
 
-for k in d:
-    if d[k] > 1:
-        duplicates.append(k)
-
-print(duplicates)

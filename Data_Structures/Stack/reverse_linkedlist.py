@@ -31,7 +31,7 @@ print(a.nextnode.value ) #2
 print(b.nextnode.value ) #3
 print(c.nextnode.value ) #4
 
-reverse(a) # a, b, c, d  >>> d, c, b, a  >>> 4, 3, 2, 1
+print(reverse(a)) # a, b, c, d  >>> d, c, b, a  >>> 4, 3, 2, 1
 
 print(d.nextnode.value ) #3
 print(c.nextnode.value ) #2

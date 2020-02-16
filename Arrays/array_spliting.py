@@ -1,10 +1,8 @@
 b = [2, 5, 6, 8, 4, 9]
-temp = b.copy()
-print(b)
-k =3
+k = 3
 
 for i in range (0, k):
-    b.pop(0)
-    b.append(temp[i])
+    s = b.pop(0)
+    b.append(s)
 
 print(b)

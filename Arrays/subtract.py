@@ -29,7 +29,7 @@ def subtract_even_index (a):
 
     n = len(a)
 
-    for i in range (0, n):
+    for i in range (1, n):
 
         if i%2 ==0:
             a[i] = a[i]-1

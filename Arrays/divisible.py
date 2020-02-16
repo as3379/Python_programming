@@ -7,4 +7,4 @@ def divisible(n):
     if n%32 ==0:
         print('ANIMAL - Number divisible by 32')
 
-divisible(8)
+divisible(16)

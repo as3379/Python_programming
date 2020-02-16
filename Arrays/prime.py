@@ -15,7 +15,7 @@ else:
         print(num, 'is a prime Number')
 
 
-#First N primne prime_numbers
+#First N prime_numbers
 
 N = 11
 prime_numbers = []

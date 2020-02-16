@@ -29,6 +29,8 @@ n = len(arr)
 k = 8
 print("The maximum repeating number is",maxRepeating(arr, n, k))
 
+
+
 # Method2:
 def mostFrequent(arr, n):
 
@@ -41,12 +43,15 @@ def mostFrequent(arr, n):
             d[i] +=1
 
     # find the max frequency
+    print(d)
     max_count = 0
      #important
     for i in d:
         if (max_count < d[i]):
-            res = i
+
             max_count = d[i]
+            res = i
+
 
     return res
 
@@ -54,6 +59,8 @@ def mostFrequent(arr, n):
 a =[2, 3, 3, 5, 3, 4, 3,1, 7]
 n = len(arr)
 print(mostFrequent(arr, n))
+
+
 
 # Method3
 a=[2, 3, 3, 5, 3, 4, 1, 7]
