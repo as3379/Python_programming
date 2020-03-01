@@ -26,18 +26,20 @@ else:
 # b= 'peeks'
 
 # Method2:
+def str_int(a, b):
+    c = ""
+    # List1 = set(List1)
+    n1 = len(a)
+    n2 = len(b)
+    if n1 < n2:
+        for i in a:
+            if i in b:
+                c +=i
 
-c = []
-# List1 = set(List1)
-n1 = len(List1)
-n2 = len(List2)
-if n1 < n2:
-    for i in List1:
-        if i in List2:
-            c.append(i)
+    else:
+        for i in b:
+            if i in a:
+                c +=i
+    print(c)
 
-else:
-    for i in List2:
-        if i in List1:
-            c.append(i)
-print(c)
+str_int("night", "hot")
